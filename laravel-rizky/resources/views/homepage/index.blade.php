@@ -99,19 +99,19 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tablesp
                             </a>
-                            <a class="nav-link" href="/dosen">
+                            <a class="nav-link" href= {{ route('dosen_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Dosen
                             </a>
-                            <a class="nav-link" href="gudang">
+                            <a class="nav-link" href={{ route('gudang_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Gudang
                             </a>
-                            <a class="nav-link" href="/karyawan">
+                            <a class="nav-link" href={{ route('karyawan_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Karyawan
                             </a>
-                            <a class="nav-link" href="/mahasiswa">
+                            <a class="nav-link" href={{ route('mahasiswa_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Mahasiswa
                             </a>
@@ -126,7 +126,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
+                        <h1 class="mt-4">Dashboard utama</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
