@@ -1,12 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DosenController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DosenController;
+use App\Http\Controllers\KameraController;
+
 
 // route::get("/", [DosenController::class, 'index'])->name('index.index');
 route::get('/dosen', [ProfileController::class, 'show'])->name('dosen.dosen');
 route::get("/", [HomeController::class, 'index'])->name('homepage.index');
+route::get("/kamera",[KameraController::class, 'index'])->name('kamera.index');
 
 // Route::get('/', function () {
 //     return view('homepage.index');
@@ -36,9 +39,9 @@ Route::get('/maintenance', function(){
     return view('maintenance.maintenance');
 });
 
-Route::get('/kamera', function(){
-    return view('kamera.index');
-})->name('kamera_index');
+// Route::get('/kamera', function(){
+//     return view('kamera.index');
+// })->name('kamera_index');
 
 Route::get('/lensa', function(){
     return view('lensa.index');

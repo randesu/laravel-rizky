@@ -1,14 +1,13 @@
 <?php
- 
+
 namespace App\Models;
-namespace App\Http\Controllers;
- 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 use Illuminate\Database\Eloquent\Model;
- 
-class Kamera extends Model
+
+class kameraku extends Model
 {
-    use HasFactory;
+    //
+    // use HasFactory;
     protected $table = 'kamera';
     protected $fillable = [
         'kamera',

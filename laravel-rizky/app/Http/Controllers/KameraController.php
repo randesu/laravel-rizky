@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\kameraku;
 use Illuminate\Http\Request;
-use App\Models\Kamera;
+
 
 class KameraController extends Controller
 {
@@ -11,7 +12,8 @@ class KameraController extends Controller
 
     
     public function index(){
-        $kameraku = Kamera::all();
+        $kameraku = kameraku::get()->all();
+        // $kameraku = Kamera::all();
         return view('kamera.index', compact('kameraku'));
         //, compact('kamera')
     }

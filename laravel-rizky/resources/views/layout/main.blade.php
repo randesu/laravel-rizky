@@ -98,7 +98,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
                             </a> -->
-                            <a class="nav-link" href= {{ route('kamera_index') }}>
+                            <a class="nav-link" href= {{ route('kamera.index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Kamera
                             </a>
