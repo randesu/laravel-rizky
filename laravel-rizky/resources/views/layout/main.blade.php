@@ -90,29 +90,29 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
+                            <!-- <a class="nav-link" href="charts.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
                             </a>
                             <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
-                            </a>
-                            <a class="nav-link" href= {{ route('dosen_index') }}>
+                            </a> -->
+                            <a class="nav-link" href= {{ route('kamera_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Dosen
+                                Kamera
                             </a>
-                            <a class="nav-link" href={{ route('gudang_index') }}>
+                            <a class="nav-link" href={{ route('lensa_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Gudang
+                                Lensa
                             </a>
-                            <a class="nav-link" href={{ route('karyawan_index') }}>
+                            <a class="nav-link" href={{ route('aksesoris_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Karyawan
+                                Aksesoris
                             </a>
-                            <a class="nav-link" href={{ route('mahasiswa_index') }}>
+                            <a class="nav-link" href={{ route('sewa_index') }}>
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Mahasiswa
+                                Penyewaan
                             </a>
                         </div>
                     </div>

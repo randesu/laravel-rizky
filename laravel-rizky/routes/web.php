@@ -35,3 +35,19 @@ Route::get('/mahasiswa', function(){
 Route::get('/maintenance', function(){
     return view('maintenance.maintenance');
 });
+
+Route::get('/kamera', function(){
+    return view('kamera.index');
+})->name('kamera_index');
+
+Route::get('/lensa', function(){
+    return view('lensa.index');
+})->name('lensa_index');
+
+Route::get('/aksesoris', function(){
+    return view('aksesoris.index');
+})->name('aksesoris_index');
+
+Route::get('/sewa', function(){
+    return view('sewa.index');
+})->name('sewa_index');
