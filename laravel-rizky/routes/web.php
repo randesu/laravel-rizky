@@ -9,7 +9,16 @@ use App\Http\Controllers\KameraController;
 // route::get("/", [DosenController::class, 'index'])->name('index.index');
 route::get('/dosen', [ProfileController::class, 'show'])->name('dosen.dosen');
 route::get("/", [HomeController::class, 'index'])->name('homepage.index');
+
+// Ini untuk bagian Kamera
 route::get("/kamera",[KameraController::class, 'index'])->name('kamera.index');
+route::get('/kamera/create', [KameraController::class, 'create'])->name('kamera.create');
+route::post('/kamera/store', [KameraController::class, 'store'])->name('kamera.store');
+route::get('/kamera/edit{id}', [KameraController::class, 'edit'])->name('kamera.edit');
+route::put('/kamera/update{id}', [KameraController::class, 'update'])->name('kamera.update');
+route::delete('/kamera/delete{id}', [KameraController::class, 'destroy'])->name('kamera.destroy');
+
+
 
 // Route::get('/', function () {
 //     return view('homepage.index');
